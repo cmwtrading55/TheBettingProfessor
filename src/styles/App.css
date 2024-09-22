@@ -1,0 +1,270 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #f4f4f4, #e9ecef);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.App {
+  padding: 20px;
+  position: relative;
+}
+
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+td {
+  background-color: #fdfdfd;
+}
+
+tr:nth-child(even) td {
+  background-color: #f7f9fa;
+}
+
+/* Highlight rows based on bet result */
+.win-row {
+  background-color: #d4edda; /* Light green */
+  color: #155724; /* Dark green text */
+}
+
+.lose-row {
+  background-color: #f8d7da; /* Light red */
+  color: #721c24; /* Dark red text */
+}
+
+.neutral-row {
+  background-color: #fff3cd; /* Light yellow */
+  color: #856404; /* Dark yellow text */
+}
+
+.default-row {
+  background-color: #ffffff; /* White */
+  color: #333333; /* Default text color */
+}
+
+/* Additional Styling for Headings */
+h2 {
+  color: #007bff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2; /* Ensure h2 is above other elements */
+}
+
+/* Hover effect for table rows */
+tr:hover td {
+  background-color: #e9ecef;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Summary Table Styling */
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.summary-table th, .summary-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.summary-table th {
+  background-color: #343a40;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Highlight summary rows based on P/L value */
+.positive-row {
+  background-color: #c3e6cb; /* Light green */
+  color: #155724; /* Dark green text */
+}
+
+.negative-row {
+  background-color: #f5c6cb; /* Light red */
+  color: #721c24; /* Dark red text */
+}
+
+/* Ensure clickable rows have pointer cursor */
+tr {
+  cursor: pointer;
+}
+
+tr.positive-row:hover, tr.negative-row:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for hyperlinks */
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+  cursor: pointer;
+}
+
+/* Graph Container Styling */
+.cumulative-graph, .graph-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cumulative-graph h2, .graph-container h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Tooltip Styling */
+.chartjs-tooltip {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+}
+
+/* Styling for View Toggle Buttons */
+.view-toggle {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.view-toggle button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.view-toggle button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.view-toggle button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for Sorting Controls */
+.sort-controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sort-controls button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.sort-controls button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.sort-controls button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Styling for Reset Button */
+.reset-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s, transform 0.2s;
+  display: block;
+  margin: 20px auto;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.reset-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Add smooth scroll for the whole page */
+html {
+  scroll-behavior: smooth;
+}
