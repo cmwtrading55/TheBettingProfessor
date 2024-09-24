@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/TheBettingProfessor/static/css/main.6622b483.css",
-    "main.js": "/TheBettingProfessor/static/js/main.24bcd585.js",
+    "main.css": "/TheBettingProfessor/static/css/main.26ee36c8.css",
+    "main.js": "/TheBettingProfessor/static/js/main.ad4a26dd.js",
     "index.html": "/TheBettingProfessor/index.html",
-    "main.6622b483.css.map": "/TheBettingProfessor/static/css/main.6622b483.css.map",
-    "main.24bcd585.js.map": "/TheBettingProfessor/static/js/main.24bcd585.js.map"
+    "main.26ee36c8.css.map": "/TheBettingProfessor/static/css/main.26ee36c8.css.map",
+    "main.ad4a26dd.js.map": "/TheBettingProfessor/static/js/main.ad4a26dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.6622b483.css",
-    "static/js/main.24bcd585.js"
+    "static/css/main.26ee36c8.css",
+    "static/js/main.ad4a26dd.js"
   ]
 }
